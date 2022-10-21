@@ -6,7 +6,9 @@ const Patients = React.lazy(() => import('./views/karuna/Patients'))
 const Events = React.lazy(() => import('./views/HighOctavez/events'))
 const Bookings = React.lazy(() => import('./views/HighOctavez/bookings'))
 const Income = React.lazy(() => import('./views/Others/Income'))
+const Payment = React.lazy(()=> import('./views/Payments/Payment'))
 const Donation = React.lazy(() => import('./views/Others/Donation'))
+const info = React.lazy(()=> import('./views/Payments/paymentProcess'))
 const Colors = React.lazy(() => import('./views/charts/Charts'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -64,6 +66,8 @@ const routes = [
   { path: '/highOctavez/bookings', name: 'High Octavez / Bookings', element: Bookings },
   { path: '/others/income', name: 'Others / Income and Expense', element: Income },
   { path: '/others/donation', name: 'Others / Donations and Tax', element: Donation },
+  {path : '/others/payment',name:'Others / Payment' , element:Payment},
+  {path : '/others/info',name:'Others / Payment status' , element:info},
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
   { path: '/base', name: 'Base', element: Cards, exact: true },

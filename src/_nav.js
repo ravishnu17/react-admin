@@ -1,6 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
+  cibGooglePlay,
   cilAperture,
   cilArrowThickLeft,
   cilArrowThickRight,
@@ -83,6 +84,13 @@ const _nav = [
     to: '/others/donation',
     icon: <CIcon icon={cilArrowThickToBottom} customClassName="nav-icon" />,
   },
+  {
+    component : CNavItem,
+    name:'Payment',
+    to:'/others/payment',
+    icon:<CIcon icon={cibGooglePlay} customClassName="nav-icon "/>
+  }
+  
   // {
   //   component: CNavTitle,
   //   name: 'Components',
